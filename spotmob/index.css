@@ -1,0 +1,35 @@
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .bg-video #player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .bg-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 64px;
+    text-shadow: 1px 1px 3px black;
+  }
