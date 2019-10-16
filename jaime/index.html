@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+  
+    <title>Contato Sirius</title>
+  </head>
+  <body>
+    <div id="page">
+        <img src="http://cursosirius.com.br/wp-content/uploads/2019/07/LOGO-1-300x224.jpg" id="logo"><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h3 align="center">Preencha os campos abaixo, entraremos em contato o mais breve possível!</h3><br /><br /><br />
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputNome">Nome Completo</label>
+                    <input type="name" class="form-control" id="inputNome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="telefone" class="form-control" id="inputTelefone" placeholder="(xx) 9xxxx-xxxx" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Seu e-mail" required>
+                </div>
+            </div>
+            <div class="form-group col-md-4 container" align="center" id="curso">
+                <label for="inputCurso">Curso pretendido:</label>
+                <select id="inputCurso" class="form-control" required>
+                    <option selected>Escolher curso...</option>
+                    <option>EsPCEx</option>
+                    <option>EsSA</option>
+                    <option>AFA</option>
+                    <option>EFOMM</option>
+                </select>
+            </div><br /><br /><br /><br />
+            <div class="form-group">
+                <h4>Selecione seus níveis de dificuldade em cada disciplina:</h4><br />
+                <label for="inputDificuldadeMatematica">Matemática:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="matematica" id="matematica_facil" value="matematica_facil">
+                        <label class="form-check-label" for="matematica_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="matematica" id="matematica_medio" value="matematica_medio">
+                        <label class="form-check-label" for="matematica_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="matematica" id="matematica_dificil" value="matematica_dificil">
+                        <label class="form-check-label" for="matematica_dificil">Difícil</label>
+                    </div><br />
+                <label for="inputDificuldadeFisica">Física:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fisica" id="fisica_facil" value="fisica_facil">
+                        <label class="form-check-label" for="fisica_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fisica" id="fisica_medio" value="fisica_medio">
+                        <label class="form-check-label" for="fisica_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fisica" id="fisica_dificil" value="fisica_dificil">
+                        <label class="form-check-label" for="fisica_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadequimica">Química:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="quimica" id="quimica_facil" value="quimica_facil">
+                        <label class="form-check-label" for="quimica_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="quimica" id="quimica_medio" value="quimica_medio">
+                        <label class="form-check-label" for="quimica_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="quimica" id="quimica_dificil" value="quimica_dificil">
+                        <label class="form-check-label" for="quimica_dificil">Difícil</label>
+                    </div><br />
+
+                    <label for="inputDificuldadeFisica">Português:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="portugues" id="portugues_facil" value="portugues_facil">
+                        <label class="form-check-label" for="portugues_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="portugues" id="portugues_medio" value="portugues_medio">
+                        <label class="form-check-label" for="portugues_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="portugues" id="portugues_dificil" value="portugues_dificil">
+                        <label class="form-check-label" for="portugues_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadeFisica">Literatura:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="literatura" id="literatura_facil" value="literatura_facil">
+                        <label class="form-check-label" for="literatura_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="literatura" id="literatura_medio" value="literatura_medio">
+                        <label class="form-check-label" for="literatura_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="literatura" id="literatura_dificil" value="literatura_dificil">
+                        <label class="form-check-label" for="literatura_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadeFisica">Redação:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="redacao" id="redacao_facil" value="redacao_facil">
+                        <label class="form-check-label" for="redacao_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="redacao" id="redacao_medio" value="redacao_medio">
+                        <label class="form-check-label" for="redacao_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="redacao" id="redacao_dificil" value="redacao_dificil">
+                        <label class="form-check-label" for="redacao_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadeFisica">Geografia:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="geografia" id="geografia_facil" value="geografia_facil">
+                        <label class="form-check-label" for="geografia_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="geografia" id="geografia_medio" value="geografia_medio">
+                        <label class="form-check-label" for="geografia_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="geografia" id="geografia_dificil" value="geografia_dificil">
+                        <label class="form-check-label" for="geografia_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadeFisica">História:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="historia" id="historia_facil" value="historia_facil">
+                        <label class="form-check-label" for="historia_medio">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="historia" id="historia_medio" value="historia_medio">
+                        <label class="form-check-label" for="historia_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="historia" id="historia_dificil" value="historia_dificil">
+                        <label class="form-check-label" for="historia_dificil">Difícil</label>
+                    </div><br />
+                    <label for="inputDificuldadeFisica">Inglês:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ingles" id="ingles_facil" value="ingles_facil">
+                        <label class="form-check-label" for="ingles_facil">Fácil</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ingles" id="ingles_medio" value="ingles_medio">
+                        <label class="form-check-label" for="ingles_medio">Médio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ingles" id="ingles_dificil" value="ingles_dificil">
+                        <label class="form-check-label" for="ingles_dificil">Difícil</label>
+                    </div><br /><br /><br /><br /><br />
+            </div>
+            <div class="form-group">
+                <h4>Preencha o calendário de acordo com a sua disponibilidade:</h4><br />
+                    <div class="form-row">
+                        <div class="form-group col-sm-1">
+                            <label for="inputSegundaFeira">Segunda-feira</label>
+                            <select id="frameworkSegunda" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputTercaFeira">Terça-feira</label>
+                            <select id="frameworkTerca" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputQuartaFeira">Quarta-feira</label>
+                            <select id="frameworkQuarta" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputQuintaFeira">Quinta-feira</label>
+                            <select id="frameworkQuinta" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputSextaFeira">Sexta-feira</label>
+                            <select id="frameworkSexta" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputSabado">Sábado</label>
+                            <select id="frameworkSabado" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-sm-1">
+                            <label for="inputDomingo">Domingo</label>
+                            <select id="frameworkDomingo" name="framework[]" multiple class="form-control" >
+                                    <option value="00:00">00:00</option>
+                                    <option value="01:00">01:00</option>
+                                    <option value="02:00">02:00</option>
+                                    <option value="03:00">03:00</option>
+                                    <option value="04:00">04:00</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                   </select>                              
+                    </div>
+                    <div class="form-group col-md-4">
+                        <!-- <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                        </select> -->
+                    </div>
+                    <div class="form-group col-md-2">
+                        <!-- <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP"> -->
+                    </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <!-- <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Clique em mim -->
+                </label>
+              </div>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary container" align="center">ENVIAR</button>
+        </form>
+    </div>
+    <!-- JavaScript -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $("#inputTelefone").mask("(00) 00000-0000");
+    </script>
+    <script>
+            $(document).ready(function(){
+             $('#frameworkSegunda').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkTerca').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkQuarta').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkQuarta').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkQuinta').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkSexta').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkSabado').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             $('#frameworkDomingo').multiselect({
+              nonSelectedText: 'Horários',
+              enableFiltering: true,
+              enableCaseInsensitiveFiltering: false,
+              buttonWidth:'100px'
+             });
+             
+             $('#framework_form').on('submit', function(event){
+              event.preventDefault();
+              var form_data = $(this).serialize();
+              $.ajax({
+               url:"insert.php",
+               method:"POST",
+               data:form_data,
+               success:function(data)
+               {
+                $('#framework option:selected').each(function(){
+                 $(this).prop('selected', false);
+                });
+                $('#framework').multiselect('refresh');
+                alert(data);
+               }
+              });
+             });
+             
+             
+            });
+            </script>
+    </body>
+</html>
+
+<style>
+#logo {
+    position: absolute;
+    left: 0; right: 0; 
+    margin: auto;
+    z-index: -1;
+}
+#page {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#curso {
+}
+/* .form-row, .form-group {
+    margin-left: 50px;
+} */
+</style>
