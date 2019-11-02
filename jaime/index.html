@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
-  
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
     <title>Contato Sirius</title>
-  </head>
+    </head>
   <body>
     <div id="page">
         <img src="bg/sirius.png" id="logo"><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -20,11 +21,11 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputNome">Nome Completo</label>
-                    <input type="name" class="form-control" id="inputNome" placeholder="Seu nome completo" required>
+                    <input type="text" class="form-control" id="inputNome" placeholder="Seu nome completo" required>
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputTelefone">Telefone</label>
-                    <input type="telefone" class="form-control" id="inputTelefone" placeholder="(xx) 9xxxx-xxxx" required>
+                    <input type="tel" class="form-control" id="inputTelefone" placeholder="(xx) 9xxxx-xxxx" required>
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputEmail">E-mail</label>
@@ -221,205 +222,212 @@
                     <div class="form-row">
                         <div class="form-group col-sm-1 container">
                             <label for="inputSegundaFeira" align="center">Segunda-feira: </label>
-                            <select id="frameworkSegunda" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
-                            </select>                              
+                            <select id="hoursMonday" multiple="multiple">
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
+                            </select>
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputTercaFeira" align="center">Terça-feira: </label>
-                            <select id="frameworkTerca" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursTuesday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                             </select>
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputQuartaFeira">Quarta-feira: </label>
-                            <select id="frameworkQuarta" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursWednesday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                                 </select>                              
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputQuintaFeira">Quinta-feira: </label>
-                            <select id="frameworkQuinta" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursThursday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                             </select>                              
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputSextaFeira">Sexta-feira: </label>
-                            <select id="frameworkSexta" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursFriday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                             </select>                              
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputSabado">Sábado: </label>
-                            <select id="frameworkSabado" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursSaturday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                             </select>                              
                     </div>
                     <div class="form-group col-sm-1 container">
                             <label for="inputDomingo">Domingo: </label>
-                            <select id="frameworkDomingo" name="framework[]" multiple class="form-control" >
-                                    <option value="00:00">00:00</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
+                            <select id="hoursSunday" multiple="multiple" >
+                                    <option value="" selected disabled>Horários</option>
+                                    <option value=" 00:00hs">00:00</option>
+                                    <option value=" 01:00hs">01:00</option>
+                                    <option value=" 02:00hs">02:00</option>
+                                    <option value=" 03:00hs">03:00</option>
+                                    <option value=" 04:00hs">04:00</option>
+                                    <option value=" 05:00hs">05:00</option>
+                                    <option value=" 06:00hs">06:00</option>
+                                    <option value=" 07:00hs">07:00</option>
+                                    <option value=" 08:00hs">08:00</option>
+                                    <option value=" 09:00hs">09:00</option>
+                                    <option value=" 10:00hs">10:00</option>
+                                    <option value=" 11:00hs">11:00</option>
+                                    <option value=" 12:00hs">12:00</option>
+                                    <option value=" 13:00hs">13:00</option>
+                                    <option value=" 14:00hs">14:00</option>
+                                    <option value=" 15:00hs">15:00</option>
+                                    <option value=" 16:00hs">16:00</option>
+                                    <option value=" 17:00hs">17:00</option>
+                                    <option value=" 18:00hs">18:00</option>
+                                    <option value=" 19:00hs">19:00</option>
+                                    <option value=" 20:00hs">20:00</option>
+                                    <option value=" 21:00hs">21:00</option>
+                                    <option value=" 22:00hs">22:00</option>
+                                    <option value=" 23:00hs">23:00</option>
                             </select>                              
                     </div>
                     <div class="form-group col-md-4">
@@ -434,7 +442,7 @@
             </div>
             </div><br /><br /><br />
             <div id="botao_enviar container" align="center">
-                <input type="button" class="btn-lg btn-primary container" id="btn-enviar" align="center" value="ENVIAR"></input>
+                <input type="button" class="btn-lg btn-danger container" id="btn-enviar" align="center" value="ENVIAR"></input>
             </div>
             <br />
             <br />
@@ -442,14 +450,12 @@
             <br />
             <br />
         </form>
-    </div>
+</body>
+</html>
+
     <!-- JavaScript -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
     <script src="box_horarios.js"></script>
     <script src="functions.js"></script>
     <script type="text/javascript">

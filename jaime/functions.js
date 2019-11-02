@@ -102,37 +102,37 @@
             console.log("Somatório de pesos: "+peso_final+" horas.");
             window.localStorage.setItem('SomatorioPesos', peso_final);
             
-            var horarios_segunda = $('#frameworkSegunda').val(); 
+            var horarios_segunda = $('#hoursMonday').val(); 
             console.log("Quantidade de horários disponíveis na SEGUNDA-FEIRA: "+(horarios_segunda.length)+" horários. ("+(horarios_segunda)+")."); 
             window.localStorage.setItem('QtdeHorasSegunda', horarios_segunda.length);
             window.localStorage.setItem('HorasSegunda', horarios_segunda);
 
-            var horarios_terca = $('#frameworkTerca').val(); 
+            var horarios_terca = $('#hoursTuesday').val(); 
             console.log("Quantidade de horários disponíveis na TERÇA-FEIRA: "+(horarios_terca.length)+" horários. ("+(horarios_terca)+")."); 
             window.localStorage.setItem('QtdeHorasTerca', horarios_terca.length);
             window.localStorage.setItem('HorasTerca', horarios_terca);
 
-            var horarios_quarta = $('#frameworkQuarta').val(); 
+            var horarios_quarta = $('#hoursWednesday').val(); 
             console.log("Quantidade de horários disponíveis na QUARTA-FEIRA: "+(horarios_quarta.length)+" horários. ("+(horarios_quarta)+").");
             window.localStorage.setItem('QtdeHorasQuarta', horarios_quarta.length);
             window.localStorage.setItem('HorasQuarta', horarios_quarta);
 
-            var horarios_quinta = $('#frameworkQuinta').val(); 
+            var horarios_quinta = $('#hoursThursday').val(); 
             console.log("Quantidade de horários disponíveis na QUINTA-FEIRA: "+(horarios_quinta.length)+" horários. ("+(horarios_quinta)+").");
             window.localStorage.setItem('QtdeHorasQuinta', horarios_quinta.length);
             window.localStorage.setItem('HorasQuinta', horarios_quinta);
 
-            var horarios_sexta = $('#frameworkSexta').val(); 
+            var horarios_sexta = $('#hoursFriday').val(); 
             console.log("Quantidade de horários disponíveis na SEXTA-FEIRA: "+(horarios_sexta.length)+" horários. ("+(horarios_sexta)+").");
             window.localStorage.setItem('QtdeHorasSexta', horarios_sexta.length);
             window.localStorage.setItem('HorasSexta', horarios_sexta);
 
-            var horarios_sabado = $('#frameworkSabado').val(); 
+            var horarios_sabado = $('#hoursSaturday').val(); 
             console.log("Quantidade de horários disponíveis no SÁBADO: "+(horarios_sabado.length)+" horários. ("+(horarios_sabado)+").");
             window.localStorage.setItem('QtdeHorasSabado', horarios_sabado.length);
             window.localStorage.setItem('HorasSabado', horarios_sabado);
 
-            var horarios_domingo = $('#frameworkDomingo').val(); 
+            var horarios_domingo = $('#hoursSunday').val(); 
             console.log("Quantidade de horários disponíveis no DOMINGO: "+(horarios_domingo.length)+" horários. ("+(horarios_domingo)+").");
             window.localStorage.setItem('QtdeHorasDomingo', horarios_domingo.length);
             window.localStorage.setItem('HorasDomingo', horarios_domingo);
