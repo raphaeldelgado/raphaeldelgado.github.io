@@ -129,6 +129,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	div.col-3 {
+		display: inline-block;
+	}
+
 	p {
 		margin: 0 0 2em 0;
 	}
@@ -635,7 +639,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
-		width: 70em;
+		width: 75em;
 	}
 
 		.container.xsmall {
