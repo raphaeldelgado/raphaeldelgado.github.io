@@ -1,0 +1,54 @@
+#logo {
+    position: absolute;
+    left: 0; right: 0; 
+    margin: auto;
+    z-index: -1;
+}
+#page {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body {
+    background-image: url(bg/bg3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+.btn span.fas {    			
+	opacity: 0;				
+}
+.btn.active span.fas {				
+	opacity: 1;				
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100px;
+    float: none;
+    display: inline;
+    color: crimson;
+}
+.btn-light {
+    border: 3px solid #ddd;
+    border-radius: 30px;
+    background-color: royalblue;
+    border-color: #fff;
+}
+.btn-light:hover {
+    border: 3px solid royalblue;
+    border-radius: 30px;
+    background-color: #fff;
+    border-color: seagreen;
+}
+.btn-light:visited {
+    border: 3px solid royalblue;
+    border-radius: 30px;
+    background-color: #fff;
+    border-color: seagreen;
+}
+button.btn.dropdown-toggle.btn-light.bs-placeholder {
+    color: #fff
+}
+button.btn.dropdown-toggle.btn-light.bs-placeholder:hover {
+    color: #000
+}
+button.btn.dropdown-toggle.btn-light.bs-placeholder:focus:visited {
+    color: #000
+}
