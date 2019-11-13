@@ -161,5 +161,5 @@
                 }
             }
             }
-            window.location.href = "imprimeDisponibilidade.php";
+            window.location.href = "imprimeDisponibilidade.html";
         };
