@@ -1,3 +1,0 @@
-$(function () {
-    $('#multipleSelect').selectpicker();        
-});
