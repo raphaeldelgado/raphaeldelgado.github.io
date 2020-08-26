@@ -136,6 +136,9 @@ input, select, textarea {
 	#certificado {
 		max-width: 250px;
 	}
+	#certificado-bradesco {
+		max-width: 290px;
+	}
 
 	#primeira_div {
 		margin-left: 10%;
