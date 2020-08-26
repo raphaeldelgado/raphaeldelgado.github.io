@@ -692,15 +692,15 @@ input, select, textarea {
 
 
 			#two {
-				height: auto;
+				height: auto !important;
 			}
 
 			#three {
-				height: auto;
+				height: auto !important;
 			}
 
 			#four {
-				height: auto;
+				height: auto !important;
 			}
 
 		}
