@@ -682,6 +682,17 @@ input, select, textarea {
 			}
 
 
+			#two {
+				height: 30rem;
+			}
+
+			#three {
+				height: 40rem;
+			}
+
+			#four {
+				height: 50rem;
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -4142,17 +4153,6 @@ input, select, textarea {
 
 	}
 
-#two {
-	height: 30rem;
-}
-
-#three {
-	height: 40rem;
-}
-
-#four {
-	height: 50rem;
-}
 
 #div-texto-principal {
 	top: 0px;
