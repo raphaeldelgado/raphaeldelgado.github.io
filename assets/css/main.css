@@ -681,12 +681,36 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
+			#two {
+				height: 30rem;
+			}
+			
+			#three {
+				height: 30rem;
+			}
+			
+			#four {
+				height: 50rem;
+			}
+
 		}
 
 		@media screen and (max-width: 980px) {
 
 			.container {
 				width: 100% !important;
+			}
+
+			#two {
+				height: 30rem;
+			}
+			
+			#three {
+				height: 30rem;
+			}
+			
+			#four {
+				height: 50rem;
 			}
 
 		}
@@ -3638,7 +3662,7 @@ input, select, textarea {
 
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
-				width: 25em;
+				/* width: 25em; */
 			}
 
 		/* Wrapper */
@@ -4129,15 +4153,15 @@ input, select, textarea {
 	}
 
 #two {
-	height: 100vh;
+	height: 30rem;
 }
 
 #three {
-	height: 120vh;
+	height: 30rem;
 }
 
 #four {
-	height: 170vh;
+	height: 50rem;
 }
 
 #div-texto-principal {
