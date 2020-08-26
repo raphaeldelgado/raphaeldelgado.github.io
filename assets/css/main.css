@@ -681,17 +681,6 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
-			#two {
-				height: 30rem;
-			}
-			
-			#three {
-				height: 30rem;
-			}
-			
-			#four {
-				height: 50rem;
-			}
 
 		}
 
@@ -699,18 +688,6 @@ input, select, textarea {
 
 			.container {
 				width: 100% !important;
-			}
-
-			#two {
-				height: 30rem;
-			}
-			
-			#three {
-				height: 30rem;
-			}
-			
-			#four {
-				height: 50rem;
 			}
 
 		}
