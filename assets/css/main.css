@@ -4145,16 +4145,12 @@ input, select, textarea {
 
 	}
 
-#two {
+#two, #four, #four-1 {
 	height: 30rem;
 }
 
 #three {
 	height: 40rem;
-}
-
-#four {
-	height: 50rem;
 }
 
 #div-texto-principal {
